@@ -1,0 +1,7 @@
+{% extends 'employeelib/enter_detail.html' %}
+
+{% block content %}
+  <h1> {{catch.first_name}} {{catch.middle_name}} {{catch.last_name}}</h1>
+  <p>Email id: {{ catch.email_id }}</p>
+  <p>Mobile number: {{ catch.mobile_number }}
+{% endblock %}

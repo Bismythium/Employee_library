@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('emplib/', include('signlog.urls')),
     path('empdet/',include('employeelib.urls')),
+    path('employee/',  include('employee.urls')),
 ]

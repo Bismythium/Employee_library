@@ -1,0 +1,21 @@
+{% extends 'baseform.html' %}
+
+{% load crispy_forms_tags %}
+
+**employee/employee_form.html**
+
+{% block content %}
+  <form method="post" novalidate>
+    {% csrf_token %}
+    <div class="row">
+      <div class="col-6">
+        {{ form.first_name|as_crispy_field }}
+      </div>
+      <div class="col-6">
+        {{ form.middle_name|as_crispy_field }}
+      </div>
+    </div>
+    {{ form.last_name|as_crispy_field }}
+    <button type="submit" class="btn btn-success">Save person</button>
+  </form>
+{% endblock %}

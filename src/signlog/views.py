@@ -61,7 +61,7 @@ def pagelogin(request):
             context= {'form': form,
                       'error': 'The login has been successful'}
             
-            return render(request, 'employeelib/templates/employeelib/enter_detail_form.html', context)
+            return render(request, 'homepage.html', context)
         else:
             context= {'form': form,
                       'error': 'The username and password combination is incorrect'}

@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'employee.apps.EmployeeConfig',
     'employeelib.apps.EmployeelibConfig',
     'signlog.apps.SignlogConfig',
     'django.contrib.admin',
